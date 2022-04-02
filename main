@@ -2,7 +2,7 @@
 
 	Created by Vaeb
   
-  Edited by Nucleus
+  	Edited by Nucleus
 
 ]]
 
@@ -200,9 +200,9 @@ gameMeta.__index, gameMeta.__namecall = function(self, key)
 
 		if ok then
 			returnValues = data
-			print("\n" .. strId .. " Name: " .. self.ClassName .. " | Path: " .. self:GetFullName() .. " | Method: " .. key .. "\n" .. strId .. " Packed Arguments: " .. tableToString(allPassed) .. "\n" .. strId .. " Packed Returned: " .. tableToString(returnValues) .. "\n")
+			print("Class Name - " .. self.ClassName .. " | Path - " .. self:GetFullName() .. " | Method - " .. key .. "\n" .. strId .. " Packed Arguments: " .. tableToString(allPassed) .. "\n" .. strId .. " Packed Returned - " .. tableToString(returnValues) .. "\n")
 		else
-			print("\n" .. strId .. " Name: " .. self.ClassName .. " | Path: " .. self:GetFullName() .. " | Method: " .. key .. "\n" .. strId .. " Packed Arguments: " .. tableToString(allPassed) .. "\n" .. strId .. " Packed Returned: [ERROR] " .. data .. "\n")
+			print("Class Name - " .. self.ClassName .. " | Path - " .. self:GetFullName() .. " | Method - " .. key .. "\n" .. strId .. " Packed Arguments: " .. tableToString(allPassed) .. "\n" .. strId .. " Packed Returned - [ERROR] " .. data .. "\n")
 		end
 
 		return unpack(returnValues)
